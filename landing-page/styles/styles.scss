@@ -1,0 +1,63 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  align-items: end;
+  justify-content: end;
+  h1 {
+    display: grid;
+    height: 100%;
+    align-items: center;
+    margin-left: 1em;
+  }
+  nav {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-decoration: none;
+    list-style: none;
+  }
+  li {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      background-color: $secondaryColor;
+      transition: 0.5s;
+      color: $onHoverTextColor;
+    }
+  }
+}
+
+.HeaderContainerGrid {
+    display: grid;
+    &:nth-child(1) {
+        background-color: red;
+        grid-row: 1 / 2;
+        z-index: 1
+    }
+    &:nth-child(0) {
+        grid-row: 1 / 2;
+        z-index: -1
+    }
+}

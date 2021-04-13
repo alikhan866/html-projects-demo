@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header h1 {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1em;
+}
+
+header nav {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+header ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-decoration: none;
+  list-style: none;
+}
+
+header li {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+header li:hover {
+  cursor: pointer;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+}
+
+.HeaderContainerGrid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.HeaderContainerGrid:nth-child(1) {
+  background-color: red;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+
+.HeaderContainerGrid:nth-child(0) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  z-index: -1;
+}
+/*# sourceMappingURL=styles.css.map */
